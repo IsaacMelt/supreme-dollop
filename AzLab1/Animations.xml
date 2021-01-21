@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE Programs [
+        <!ELEMENT Programs (program)*>
+        <!ELEMENT program (program_name|language|author|release_year|subscription_price)*>
+        <!ATTLIST program
+                idno CDATA #REQUIRED>
+        <!ELEMENT program_name (#PCDATA)>
+        <!ELEMENT language (#PCDATA)>
+        <!ELEMENT author (#PCDATA)>
+        <!ELEMENT release_year (#PCDATA)>
+        <!ELEMENT subscription_price (#PCDATA)>
+        ]>
+<Programs>
+    <program idno="1">
+        <program_name>Adobe Animate</program_name>
+        <language>C++</language>
+        <author>FutureWave Software Macromedia</author>
+        <release_year>1996</release_year>
+        <subscription_price>10</subscription_price>
+    </program>
+    <program idno="2">
+        <program_name>Stop Motion Studio</program_name>
+        <language>C#</language>
+        <author>Wallace Studio</author>
+        <release_year>1999</release_year>
+        <subscription_price>7</subscription_price>
+    </program>
+    <program idno="3">
+        <program_name>Blender</program_name>
+        <language>Python</language>
+        <author>Blender Foundation</author>
+        <release_year>1998</release_year>
+        <subscription_price>12</subscription_price>
+    </program>
+    <program idno="4">
+        <program_name>Toon Boom Harmony</program_name>
+        <language>C++</language>
+        <author>Toon Boom Animation</author>
+        <release_year>1996</release_year>
+        <subscription_price>15</subscription_price>
+    </program>
+</Programs>
